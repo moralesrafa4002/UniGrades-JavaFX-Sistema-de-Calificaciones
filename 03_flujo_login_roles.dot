@@ -1,0 +1,50 @@
+classDiagram
+    class Usuario {
+        int id
+        String nombre
+        String correo
+        String password
+        TipoUsuario tipo
+    }
+    class Alumno {
+        int idUsuario
+        String matricula
+        int idCarrera
+    }
+    class Profesor {
+        int idUsuario
+        String numeroEmpleado
+    }
+    class Materia {
+        int id
+        String nombre
+        int idCarrera
+        int idSemestre
+    }
+    class Grupo {
+        int id
+        int idMateria
+        int idProfesor
+        String periodo
+        String nombreGrupo
+    }
+    class Calificacion {
+        double parcial1
+        double parcial2
+        double parcial3
+        double actividades
+        double promedioFinal
+        String estatus
+    }
+    class GradeCalculatorStrategy {
+        <<interface>>
+        calcularPromedioFinal()
+        determinarEstatus()
+    }
+    class WeightedGradeCalculator
+    GradeCalculatorStrategy <|.. WeightedGradeCalculator
+    Usuario --> Alumno
+    Usuario --> Profesor
+    Profesor --> Grupo
+    Materia --> Grupo
+    Grupo --> Calificacion

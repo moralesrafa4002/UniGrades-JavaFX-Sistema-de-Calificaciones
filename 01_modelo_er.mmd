@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<unigrades>
+    <universidad id="1" nombre="Universidad del Proyecto"/>
+    <usuarios>
+        <usuario id="1" nombre="Administrador General" correo="admin@universidad.edu" password="admin123" tipo="ADMINISTRADOR"/>
+        <usuario id="2" nombre="Profesor Demo" correo="profesor@universidad.edu" password="profe123" tipo="PROFESOR"/>
+        <usuario id="3" nombre="Alumno Demo" correo="alumno@universidad.edu" password="alumno123" tipo="ALUMNO"/>
+        <usuario id="4" nombre="Alumno Sistemas" correo="alumno2@universidad.edu" password="alumno123" tipo="ALUMNO"/>
+    </usuarios>
+    <administradores>
+        <administrador idUsuario="1" numeroEmpleado="ADM-001"/>
+    </administradores>
+    <profesores>
+        <profesor idUsuario="2" numeroEmpleado="PROF-001"/>
+    </profesores>
+    <alumnos>
+        <alumno idUsuario="3" matricula="A-2026-001" idCarrera="1"/>
+        <alumno idUsuario="4" matricula="A-2026-002" idCarrera="1"/>
+    </alumnos>
+    <carreras>
+        <carrera id="1" nombre="Ingeniería en Sistemas Computacionales" idUniversidad="1"/>
+        <carrera id="2" nombre="Ingeniería Industrial" idUniversidad="1"/>
+    </carreras>
+    <semestres>
+        <semestre id="1" numero="1"/>
+        <semestre id="2" numero="2"/>
+        <semestre id="3" numero="3"/>
+        <semestre id="4" numero="4"/>
+        <semestre id="5" numero="5"/>
+        <semestre id="6" numero="6"/>
+        <semestre id="7" numero="7"/>
+        <semestre id="8" numero="8"/>
+    </semestres>
+    <materias>
+        <materia id="1" nombre="Programación Orientada a Objetos" idCarrera="1" idSemestre="3"/>
+        <materia id="2" nombre="Bases de Datos" idCarrera="1" idSemestre="4"/>
+        <materia id="3" nombre="Arquitectura de Computadoras" idCarrera="1" idSemestre="4"/>
+    </materias>
+    <grupos>
+        <grupo id="1" idMateria="1" idProfesor="2" periodo="2026-1" nombreGrupo="SIS-POO-301"/>
+        <grupo id="2" idMateria="2" idProfesor="2" periodo="2026-1" nombreGrupo="SIS-BD-401"/>
+    </grupos>
+    <inscripciones>
+        <inscripcion id="1" idAlumno="3" idGrupo="1"/>
+        <inscripcion id="2" idAlumno="4" idGrupo="1"/>
+        <inscripcion id="3" idAlumno="3" idGrupo="2"/>
+    </inscripciones>
+    <configuraciones>
+        <configuracion id="1" idMateria="1" porcentajeParciales="70" porcentajeActividades="30" calificacionMinima="6.0" faltasMaximas="5"/>
+        <configuracion id="2" idMateria="2" porcentajeParciales="60" porcentajeActividades="40" calificacionMinima="6.0" faltasMaximas="5"/>
+        <configuracion id="3" idMateria="3" porcentajeParciales="80" porcentajeActividades="20" calificacionMinima="6.0" faltasMaximas="4"/>
+    </configuraciones>
+    <calificaciones>
+        <calificacion id="1" idInscripcion="1" parcial1="8.0" parcial2="9.0" parcial3="7.5" actividades="9.5" faltas="1" promedioFinal="8.38" estatus="APROBADO"/>
+        <calificacion id="2" idInscripcion="2" parcial1="5.0" parcial2="6.0" parcial3="5.5" actividades="7.0" faltas="2" promedioFinal="6.02" estatus="APROBADO"/>
+        <calificacion id="3" idInscripcion="3" parcial1="9.0" parcial2="8.5" parcial3="9.5" actividades="9.0" faltas="0" promedioFinal="9.0" estatus="APROBADO"/>
+    </calificaciones>
+</unigrades>

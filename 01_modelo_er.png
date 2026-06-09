@@ -1,0 +1,11 @@
+flowchart TD
+    A[Usuario abre aplicación] --> B[Login]
+    B --> C{Credenciales válidas?}
+    C -- No --> D[Mostrar alerta]
+    C -- Sí --> E{Tipo de usuario}
+    E -- ADMINISTRADOR --> F[Panel administrador]
+    E -- PROFESOR --> G[Panel profesor]
+    E -- ALUMNO --> H[Panel alumno]
+    F --> I[CRUD académico]
+    G --> J[Captura calificaciones]
+    H --> K[Consulta calificaciones]

@@ -1,0 +1,34 @@
+# Referencias
+
+## JavaFX / OpenJFX
+
+JavaFX se utilizó como tecnología principal para crear la interfaz gráfica de escritorio. La documentación de OpenJFX se tomó como referencia para estructurar el proyecto y ejecutarlo mediante Maven.
+
+- OpenJFX Documentation: https://openjfx.io/openjfx-docs/
+- JavaFX Maven Plugin: https://github.com/openjfx/javafx-maven-plugin
+
+## Java
+
+Java se utilizó como lenguaje principal por su enfoque orientado a objetos, manejo de clases, paquetes, enumeraciones, interfaces y excepciones.
+
+- Java Documentation: https://docs.oracle.com/en/java/
+
+## XML en Java
+
+La persistencia se implementó con XML usando librerías estándar de Java para leer y escribir documentos.
+
+- Java XML Processing: https://docs.oracle.com/javase/tutorial/jaxp/
+
+## Maven
+
+Maven se utilizó para organizar el proyecto, compilarlo y ejecutar JavaFX mediante plugin.
+
+- Apache Maven Documentation: https://maven.apache.org/guides/
+
+## MVC
+
+La arquitectura MVC se usó como referencia para separar pantallas, controladores, servicios y persistencia.
+
+## Nota académica
+
+El sistema utiliza datos de prueba para demostrar el funcionamiento de login, roles, CRUD básico, inscripción, calificaciones y cálculo automático de promedio final.

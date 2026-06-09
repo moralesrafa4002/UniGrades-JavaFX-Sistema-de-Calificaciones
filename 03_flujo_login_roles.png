@@ -1,0 +1,26 @@
+digraph ER {
+    rankdir=LR;
+    node [shape=record, style=filled, fillcolor="#f4f7fb", color="#1e3354"];
+    Universidad [label="Universidad|id\nnombre"];
+    Carrera [label="Carrera|id\nnombre\nidUniversidad"];
+    Semestre [label="Semestre|id\nnumero"];
+    Materia [label="Materia|id\nnombre\nidCarrera\nidSemestre"];
+    Usuario [label="Usuario|id\nnombre\ncorreo\npassword\ntipo"];
+    Alumno [label="Alumno|idUsuario\nmatricula\nidCarrera"];
+    Profesor [label="Profesor|idUsuario\nnumeroEmpleado"];
+    Grupo [label="Grupo|id\nidMateria\nidProfesor\nperiodo"];
+    Inscripcion [label="Inscripcion|id\nidAlumno\nidGrupo"];
+    Calificacion [label="Calificacion|id\nidInscripcion\nparciales\nactividades\npromedioFinal"];
+    Configuracion [label="ConfiguracionEvaluacion|id\nidMateria\nporcentajes\nminima\nfaltas"];
+    Universidad -> Carrera;
+    Carrera -> Materia;
+    Semestre -> Materia;
+    Usuario -> Alumno;
+    Usuario -> Profesor;
+    Profesor -> Grupo;
+    Materia -> Grupo;
+    Alumno -> Inscripcion;
+    Grupo -> Inscripcion;
+    Inscripcion -> Calificacion;
+    Materia -> Configuracion;
+}

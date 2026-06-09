@@ -1,0 +1,6 @@
+flowchart LR
+    UI[UI JavaFX] --> CTRL[Controller]
+    CTRL --> SERV[Services]
+    SERV --> REPO[Repository Context]
+    REPO --> XML[XML Persistence]
+    SERV --> PAT[Patrones: Singleton y Strategy]

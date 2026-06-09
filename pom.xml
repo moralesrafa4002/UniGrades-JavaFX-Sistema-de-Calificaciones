@@ -1,0 +1,29 @@
+package com.rafa.unigrades.model;
+
+public class Materia {
+    private int id;
+    private String nombre;
+    private int idCarrera;
+    private int idSemestre;
+
+    public Materia() {}
+
+    public Materia(int id, String nombre, int idCarrera, int idSemestre) {
+        this.id = id;
+        this.nombre = nombre;
+        this.idCarrera = idCarrera;
+        this.idSemestre = idSemestre;
+    }
+
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
+    public int getIdCarrera() { return idCarrera; }
+    public void setIdCarrera(int idCarrera) { this.idCarrera = idCarrera; }
+    public int getIdSemestre() { return idSemestre; }
+    public void setIdSemestre(int idSemestre) { this.idSemestre = idSemestre; }
+
+    @Override
+    public String toString() { return nombre; }
+}

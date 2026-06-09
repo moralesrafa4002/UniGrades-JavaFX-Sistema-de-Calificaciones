@@ -1,0 +1,13 @@
+erDiagram
+    UNIVERSIDAD ||--o{ CARRERA : contiene
+    CARRERA ||--o{ MATERIA : organiza
+    SEMESTRE ||--o{ MATERIA : ubica
+    USUARIO ||--o| ALUMNO : puede_ser
+    USUARIO ||--o| PROFESOR : puede_ser
+    USUARIO ||--o| ADMINISTRADOR : puede_ser
+    PROFESOR ||--o{ GRUPO : imparte
+    MATERIA ||--o{ GRUPO : se_abre_en
+    ALUMNO ||--o{ INSCRIPCION : realiza
+    GRUPO ||--o{ INSCRIPCION : recibe
+    INSCRIPCION ||--o| CALIFICACION : tiene
+    MATERIA ||--o| CONFIGURACION_EVALUACION : define
